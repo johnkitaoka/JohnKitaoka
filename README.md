@@ -1,2 +1,2 @@
-# JohnKitaoka
+# JohnKitaoka.com
 Personal Website
