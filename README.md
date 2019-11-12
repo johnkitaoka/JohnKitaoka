@@ -1,2 +1,0 @@
-# JohnKitaoka.com
-Personal Website
