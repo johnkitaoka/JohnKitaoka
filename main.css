@@ -12,32 +12,49 @@ body {
   font-size:18px;
   color:#cccccc;
   padding:0 10px;
+  opacity:1;
 
-	
-  animation: move 2s;
-  -webkit-animation: move 2s;
 }
 
-@keyframes move {
-  from {
-    margin-top: 15%;
-	opacity: 0;
-  }
 
-  to {
-    margin-top: 5%;
-	opacity: 100;
-  }
-}
-            
-@-webkit-keyframes move {
-  from {
-    margin-top: 15%;
-	opacity: 0;
-  }
 
+/* animation. could be done in SASS with iteration */
+  .tile {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+  }
+  .tile:nth-child(2) {
+    animation-delay: .15s;
+  }
+  .tile:nth-child(3) {
+    animation-delay: .3s;
+  }
+  .tile:nth-child(4) {
+    animation-delay: .45s;
+  }
+  .tile:nth-child(5) {
+    animation-delay: .6s;
+  }
+  .tile:nth-child(6) {
+    animation-delay: .75s;
+  }
+  .tile:nth-child(7) {
+    animation-delay: .9s;
+  }
+  .tile:nth-child(8) {
+    animation-delay: 1.05s;
+  }
+  
+  
+  
+@keyframes fadeInDown {
+  from {
+opacity: 0;
+transform: translateY(50px);
+  }
   to {
-    margin-top: 5%;
-	opacity: 100;
+opacity: 1;
+transform: translate(0px);
   }
 }
