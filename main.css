@@ -1,0 +1,43 @@
+body {
+  background: black;	
+  
+  font-family: sans-serif;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  
+  max-width:650px;
+  line-height:1.6;
+  font-size:18px;
+  color:#cccccc;
+  padding:0 10px;
+
+	
+  animation: move 2s;
+  -webkit-animation: move 2s;
+}
+
+@keyframes move {
+  from {
+    margin-top: 15%;
+	opacity: 0;
+  }
+
+  to {
+    margin-top: 5%;
+	opacity: 100;
+  }
+}
+            
+@-webkit-keyframes move {
+  from {
+    margin-top: 15%;
+	opacity: 0;
+  }
+
+  to {
+    margin-top: 5%;
+	opacity: 100;
+  }
+}
