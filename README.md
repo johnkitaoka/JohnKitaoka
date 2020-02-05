@@ -1,2 +1,2 @@
 # JohnKitaoka.com
-Personal Website - down currently until December
+Personal Website - down currently
