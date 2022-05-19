@@ -1,2 +1,2 @@
 # JohnKitaoka.com
-Personal Website - down currently
+Personal Website
