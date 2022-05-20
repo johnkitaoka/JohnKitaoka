@@ -115,6 +115,28 @@ body{
     font-size:18px;
 }
 
+.map{
+	display: inline-block;
+	text-align: left;
+	
+	background:transparent;
+	
+	/* forcing center */
+	position:absolute;
+	left: 45%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	
+	
+	margin-top:5%;
+	margin-left:5%;
+	margin-right:5%;
+
+	max-width:300px;
+	min-width:80%;
+    font-size:18px;
+}
+
 canvas{
 	z-index: -1;
   display:block;
