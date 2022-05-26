@@ -35,7 +35,7 @@ li{list-style:none}
 html,body{ 
 	width:100%;
 	height:100%;
-	background:rgb(236, 236, 236);
+	background:rgb(248, 248, 248);
 	text-align:center;
     animation-name: fade;
     animation-duration: 2s;
@@ -43,10 +43,42 @@ html,body{
 	
 }
 
-img {
-  max-width: 30%;
-  height: auto;
+h1 {
+  font-weight: 600;
+  font-size: 300%;
+  padding-top: 0.5em;
+
 }
+
+h3 {
+  font-weight: 600;
+  font-size: 150%;
+  padding-top: 0.5em;
+
+}
+
+
+
+img {
+  width: 50%;
+  max-width: 350px;
+  float: right;
+  padding-right: 8%;
+}
+
+.sep:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  height: 1px;
+  /* border-bottom: 2px solid var(--color-slate); */
+  border-bottom: 2px solid rgba(39, 49, 66, 0.5);
+  padding-top: 0px;
+  margin-bottom: 25px;
+  margin-top: 10px;}
+
 
 html{
 	
@@ -69,7 +101,7 @@ body{
     animation-duration: 2s;
     animation-fill-mode: backwards;
 	position:relative;
-	color: #6d6d6d;
+	color: #000000;
 	
 }
 
@@ -92,7 +124,6 @@ body{
 
 
 
-
 .textMain{
 	display: inline-block;
 	text-align: left;
@@ -101,71 +132,24 @@ body{
 	
 	/* forcing center */
 	position:absolute;
-	left: 45%;
+	left: 35%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	
 	
 	margin-top:5%;
-	margin-left:5%;
-	margin-right:5%;
+	margin-left:15%;
+	margin-right:15%;
 
-	max-width:300px;
-	min-width:80%;
-    font-size:18px;
-}
-
-.map{
-	display: inline-block;
-	text-align: left;
-	
-	background:transparent;
-	
-	/* forcing center */
-	position:absolute;
-	left: 45%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	
-	
-	margin-top:5%;
-	margin-left:5%;
-	margin-right:5%;
-
-	max-width:300px;
-	min-width:80%;
-    font-size:18px;
-}
-
-canvas{
-	z-index: -1;
-  display:block;
-  vertical-align:bottom;
+	max-width:250px;
+	min-width:70%;
+    font-size:16px;
 }
 
 
 
 
-/* ---- particles.js container ---- */
 
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  
-
-}
-
-#particles canvas{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-}
 
 
 
