@@ -40,7 +40,7 @@ html,body{
     animation-name: fade;
     animation-duration: 2s;
     animation-fill-mode: backwards;
-	
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
