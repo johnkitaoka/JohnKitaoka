@@ -330,3 +330,18 @@ footer {
   object-fit: cover;
   margin-bottom: 20px;
 }
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.social-link svg {
+  flex-shrink: 0;
+}
+
+.social-link span {
+  line-height: 1.3;
+}
