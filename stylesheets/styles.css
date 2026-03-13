@@ -194,59 +194,6 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-.section-header {
-  cursor: pointer;
-  position: relative;
-  padding: 10px 0;
-  transition: color 0.3s ease;
-  margin-bottom: 0;
-}
-
-.section-header::after {
-  content: '+';
-  position: absolute;
-  right: 10px;
-  transition: transform 0.3s ease;
-}
-
-.section-header.active::after {
-  transform: rotate(45deg);
-}
-
-.section-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1),
-              opacity 0.3s ease-out,
-              padding-top 0.3s ease-out,
-              padding-bottom 0.3s ease-out;
-  opacity: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* Create a wrapper for the hover target */
-.section-wrapper {
-  margin-bottom: 20px;
-}
-
-/* Modify the hover behavior to use the wrapper */
-.section-wrapper:hover .section-content,
-.section-header.active + .section-content {
-  max-height: 1000px;
-  opacity: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: max-height 0.5s cubic-bezier(0.4, 0, 1, 1),
-              opacity 0.3s ease-in,
-              padding-top 0.3s ease-in,
-              padding-bottom 0.3s ease-in;
-}
-
-.section-wrapper:hover .section-header,
-.section-header.active {
-  color: #39c;
-}
 
 @media print, screen and (max-width: 960px) {
 
