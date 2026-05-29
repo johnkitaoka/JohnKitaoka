@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>John Kitaoka's Homepage</title>
+    <title>John Kitaoka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -29,39 +32,75 @@
       </header>
 
       <section>
-        <p>I'm currently working at AWS, focused on designing and deploying production AI systems for public sector organizations. My recent work includes agentic systems, evaluation frameworks, fine-tuning LLMs, and scaling AI responsibly. Feel free to reach out!</p>
-        <p>Previously, I developed software to automate business operations for <a href="https://geotek.com">a manufacturing firm</a>, <a href="https://www.cityofmadison.com/metro/documents/brt/brt-redundancies.pdf">optimized a transit system</a> for the city of Madison, and helped a startup implement marketing analytics as part of a <a href="https://creativedestructionlab.com/locations/wisconsin/">venture capital fellowship</a>. I have a background in mathematics and computer science from the University of Wisconsin-Madison, where I worked as a teaching assistant for 3 years.</p>
+        <p>I'm doing AI safety research, mentored by Jacob Merizian via MATS. I'm studying dangerous capabilities and knowledge in AI models.</p>
+        <p>Previously I worked on AI for the public sector at Amazon Web Services for four years, and I studied math and computer science at Wisconsin. Feel free to reach out!</p>
 
         <nav class="nav-links">
           <a href="#" data-section="written-works">Written Works</a>
           <a href="#" data-section="technical-works">Technical Works</a>
           <a href="#" data-section="public-speaking">Public Speaking</a>
-          <a href="#" data-section="blog">Blog</a>
+          <a href="https://substack.com/@johnkit">Blog</a>
         </nav>
 
         <div id="section-content">
           <div id="written-works" class="section-panel" style="display:none">
-            <h3>Written Works</h3>
-            <p>A Very Big Video Reasoning Suite <small><a href="https://arxiv.org/abs/2602.20159">Paper</a>, <a href="https://video-reason.com">Project</a></small><br><b>Research Paper</b> | February 2026</p>
-            <p>Building a Production Text-to-SQL Workload for a Public Health Organization <small><a href="https://aws.amazon.com/blogs/publicsector/how-strategic-solutions-group-built-an-ai-powered-case-report-builder-on-aws-to-accelerate-public-health-insights/">Blog Link</a></small><br><b>AWS Customer Success Story</b> | October 2025</p>
-            <p>Scaling Production Analytics and Database Utilization for Healthcare <small><a href="https://aws.amazon.com/solutions/case-studies/bamboo-case-study/">Case Study</a></small><br><b>AWS Case Study</b> | October 2025</p>
-            <p>Scaling unstructured text analysis with Amazon Nova <small><a href="https://aws.amazon.com/blogs/machine-learning/ai-judging-ai-scaling-unstructured-text-analysis-with-amazon-nova/">Blog Link</a></small><br><b>AWS Blog</b> | August 2025</p>
-            <p>Host concurrent LLMs with LORAX <small><a href="https://aws.amazon.com/blogs/machine-learning/host-concurrent-llms-with-lorax/">Blog Link</a></small><br><b>AWS Blog</b> | April 2025</p>
-            <p>Generative AI in the Public Sector <small><a href="https://pages.awscloud.com/ps-get-started-with-ai-ebook-learn.html?trk=1896ac03-64f8-488d-b6fe-1e36340af61a&sc_channel=el"> Book Link</a></small><br><b>AWS eBook</b> | November 2024</p>
-            <p>Hosting and Training LLMs in GovCloud Regions <small><a href="https://aws.amazon.com/blogs/publicsector/deploy-llms-in-aws-govcloud-us-regions-using-hugging-face-inference-containers/">Hosting Blog</a>, <a href="https://aws.amazon.com/blogs/publicsector/fine-tuning-an-llm-using-qlora-in-aws-govcloud-us/">Training Blog</a></small><br><b>AWS Blog Series</b> | June 2024</p>
-            <p>Document Summarization in Healthcare <small><a href="https://aws.amazon.com/blogs/machine-learning/create-an-hcls-document-summarization-application-with-falcon-using-amazon-sagemaker-jumpstart/">Blog Link</a></small><br><b>AWS Blog</b> | February 2024</p>
+
+            <div class="work-item">
+              <a href="https://arxiv.org/abs/2602.20159" class="work-thumb"><img src="assets/thumbnails/vbvr.png" alt=""></a>
+              <p>A Very Big Video Reasoning Suite <small><a href="https://arxiv.org/abs/2602.20159">Paper</a>, <a href="https://video-reason.com">Project</a></small><br><b>ICML 2026</b> | February 2026</p>
+            </div>
+            <div class="work-item">
+              <a href="https://aws.amazon.com/blogs/publicsector/how-strategic-solutions-group-built-an-ai-powered-case-report-builder-on-aws-to-accelerate-public-health-insights/" class="work-thumb"><img src="assets/thumbnails/ssg-aws.png" alt=""></a>
+              <p>Building a Production Text-to-SQL Workload for a Public Health Organization <small><a href="https://aws.amazon.com/blogs/publicsector/how-strategic-solutions-group-built-an-ai-powered-case-report-builder-on-aws-to-accelerate-public-health-insights/">Blog Link</a></small><br><b>AWS Customer Success Story</b> | October 2025</p>
+            </div>
+            <div class="work-item">
+              <a href="https://aws.amazon.com/solutions/case-studies/bamboo-case-study/" class="work-thumb"><img src="assets/thumbnails/bh-aws.png" alt=""></a>
+              <p>Scaling Production Analytics and Database Utilization for Healthcare <small><a href="https://aws.amazon.com/solutions/case-studies/bamboo-case-study/">Case Study</a></small><br><b>AWS Case Study</b> | October 2025</p>
+            </div>
+            <div class="work-item">
+              <a href="https://aws.amazon.com/blogs/machine-learning/ai-judging-ai-scaling-unstructured-text-analysis-with-amazon-nova/" class="work-thumb"><img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/07/25/ml-18429-diagram-682x630.png" alt=""></a>
+              <p>Scaling unstructured text analysis with Amazon Nova <small><a href="https://aws.amazon.com/blogs/machine-learning/ai-judging-ai-scaling-unstructured-text-analysis-with-amazon-nova/">Blog Link</a></small><br><b>AWS Blog</b> | August 2025</p>
+            </div>
+            <div class="work-item">
+              <a href="https://aws.amazon.com/blogs/machine-learning/host-concurrent-llms-with-lorax/" class="work-thumb"><img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/04/07/LoRaX-EC2-2-1260x628.png" alt=""></a>
+              <p>Host concurrent LLMs with LoRAX <small><a href="https://aws.amazon.com/blogs/machine-learning/host-concurrent-llms-with-lorax/">Blog Link</a></small><br><b>AWS Blog</b> | April 2025</p>
+            </div>
+            <div class="work-item">
+              <a href="https://pages.awscloud.com/ps-get-started-with-ai-ebook-learn.html?trk=1896ac03-64f8-488d-b6fe-1e36340af61a&sc_channel=el" class="work-thumb"><img src="assets/thumbnails/genai-ebook.png" alt=""></a>
+              <p>Generative AI in the Public Sector <small><a href="https://pages.awscloud.com/ps-get-started-with-ai-ebook-learn.html?trk=1896ac03-64f8-488d-b6fe-1e36340af61a&sc_channel=el"> Book Link</a></small><br><b>AWS eBook</b> | November 2024</p>
+            </div>
+            <div class="work-item">
+              <a href="https://aws.amazon.com/blogs/publicsector/deploy-llms-in-aws-govcloud-us-regions-using-hugging-face-inference-containers/" class="work-thumb"><img src="https://d2908q01vomqb2.cloudfront.net/9e6a55b6b4563e652a23be9d623ca5055c356940/2024/05/08/govcloud_llm_header-1260x630.png" alt=""></a>
+              <p>Hosting and Training LLMs in GovCloud Regions <small><a href="https://aws.amazon.com/blogs/publicsector/deploy-llms-in-aws-govcloud-us-regions-using-hugging-face-inference-containers/">Hosting Blog</a>, <a href="https://aws.amazon.com/blogs/publicsector/fine-tuning-an-llm-using-qlora-in-aws-govcloud-us/">Training Blog</a></small><br><b>AWS Blog Series</b> | June 2024</p>
+            </div>
+            <div class="work-item">
+              <a href="https://aws.amazon.com/blogs/machine-learning/create-an-hcls-document-summarization-application-with-falcon-using-amazon-sagemaker-jumpstart/" class="work-thumb"><img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2023/10/04/hcls-document-repository-falcon.jpg" alt=""></a>
+              <p>Document Summarization in Healthcare <small><a href="https://aws.amazon.com/blogs/machine-learning/create-an-hcls-document-summarization-application-with-falcon-using-amazon-sagemaker-jumpstart/">Blog Link</a></small><br><b>AWS Blog</b> | February 2024</p>
+            </div>
           </div>
 
           <div id="technical-works" class="section-panel" style="display:none">
-            <h3>Technical Works</h3>
-            <p>Media Extraction and Form Filling Architecture <small><a href="https://github.com/aws-samples/sample-bedrock-form-filling">aws-samples/sample-bedrock-form-filling</a></small><br><b>AWS Sample</b> | December 2025</p>
-            <p>LangChain AWS Contributions <small><a href="https://github.com/langchain-ai/langchain-aws/commits/main?author=johnkitaoka">GitHub Commits</a></small><br><b>Open Source</b> | 2025</p>
-            <p>MistralLite <small><a href="https://huggingface.co/amazon/MistralLite">amazon/mistrallite</a></small><br><b>Long-Context LLM</b> | October 2023</p>
-            <p>Semantic Search and RAG <small><a href="https://github.com/aws-samples/semantic-search-with-amazon-opensearch">aws-samples/semantic-search-with-amazon-opensearch</a></small><br><b>Generative AI Workshop, Re:Invent 2023, 2024, and 2025</b> | October 2023</p>
+
+            <div class="work-item">
+              <a href="https://github.com/aws-samples/sample-bedrock-form-filling" class="work-thumb"><img src="assets/thumbnails/bedrock-media.png" alt=""></a>
+              <p>Media Extraction and Form Filling Architecture <small><a href="https://github.com/aws-samples/sample-bedrock-form-filling">aws-samples/sample-bedrock-form-filling</a></small><br><b>AWS Sample</b> | December 2025</p>
+            </div>
+            <div class="work-item">
+              <a href="https://github.com/langchain-ai/langchain-aws/commits/main?author=johnkitaoka" class="work-thumb"><img src="assets/thumbnails/lc-aws.png" alt=""></a>
+              <p>LangChain AWS Contributions <small><a href="https://github.com/langchain-ai/langchain-aws/commits/main?author=johnkitaoka">GitHub Commits</a></small><br><b>Open Source</b> | 2025</p>
+            </div>
+            <div class="work-item">
+              <a href="https://huggingface.co/amazon/MistralLite" class="work-thumb"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/amazon/MistralLite.png" alt=""></a>
+              <p>MistralLite <small><a href="https://huggingface.co/amazon/MistralLite">amazon/mistrallite</a></small><br><b>Long-Context LLM</b> | October 2023</p>
+            </div>
+            <div class="work-item">
+              <a href="https://github.com/aws-samples/semantic-search-with-amazon-opensearch" class="work-thumb"><img src="assets/thumbnails/semantic-search.png" alt=""></a>
+              <p>Semantic Search and RAG <small><a href="https://github.com/aws-samples/semantic-search-with-amazon-opensearch">aws-samples/semantic-search-with-amazon-opensearch</a></small><br><b>Generative AI Workshop, Re:Invent 2023, 2024, and 2025</b> | October 2023</p>
+            </div>
           </div>
 
           <div id="public-speaking" class="section-panel" style="display:none">
-            <h3>Public Speaking</h3>
+
             <p>Building AI Applications in Isolated Environments <br><small>June 2025, AWS Summit DC</small></p>
             <p>Responsible AI <br><small>January 2025, AWS Federal Software Workshop</small></p>
             <p>Responsible Artificial Intelligence for Public Safety <small><a href="https://prophoenix.com/conference/">Link</a></small> <br><small>October 2024, ProPhoenix National User Conference</small></p>
@@ -73,16 +112,12 @@
             <p>Machine Learning for Public Policy <small><a href="https://unstats.un.org/bigdata/events/2023/un-datathon/">Link</a></small><br><small>October 2023, United Nations DESA Datathon</small></p>
           </div>
 
-          <div id="blog" class="section-panel" style="display:none">
-            <h3>Blog</h3>
-            <p>Come back soon!</p>
-          </div>
         </div>
       </section>
 
     </div>
     <script>
-      document.querySelectorAll('.nav-links a').forEach(function(link) {
+      document.querySelectorAll('.nav-links a[data-section]').forEach(function(link) {
         link.addEventListener('click', function(e) {
           e.preventDefault();
           var target = this.getAttribute('data-section');
@@ -101,5 +136,7 @@
         });
       });
     </script>
+    <script data-goatcounter="https://johnkitaoka.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>
